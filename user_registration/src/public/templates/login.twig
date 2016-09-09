@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Login using Slim</title>
+        <link href='//fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href='{{ base_url() }}/css/style.css' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <h1>Login Page</h1>
+        <div>a PHP Powered</div>
+		<form action="/user_login" method="post">
+			<span style="color:red">{{ flash.message('error')[0] }}</span>
+
+			<fieldset>
+				<input name="user_name" type="text" placeholder="Enter User Name">
+				<input name="user_password" type="password" placeholder="Enter Password">
+			</fieldset>
+				<input type="submit" class="button" value="Login"/>
+				
+		</form>
+    </body>
+</html>
+        
