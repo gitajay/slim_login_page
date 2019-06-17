@@ -6,7 +6,7 @@ Add your config like db cred can be added in config.php
 
 
 ====================================
-How to run?
+   How to run?
 ====================================
 
 Set Apache DocumentRoot to the public folder of the project
